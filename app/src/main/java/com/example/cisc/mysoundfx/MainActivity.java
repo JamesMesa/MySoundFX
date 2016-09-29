@@ -42,14 +42,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             descriptor = assetsManager.openFd("jump.wav");
             sample2 = soundPool.load(descriptor, 0);
 
-            descriptor = assetsManager.openFd("powerup2.wav");
+            descriptor = assetsManager.openFd("powerup.wav");
             sample3 = soundPool.load(descriptor, 0);
         }
         catch (IOException e)
         {
 
             Context context = getApplicationContext();
-            CharSequence text = "PICK UP COIN BUTTON NOT FOUND!";
+            CharSequence text = "BUTTON NOT FOUND!";
             int duration = Toast.LENGTH_LONG;
 
             Toast toast = Toast.makeText(context, text, duration);
